@@ -4,3 +4,5 @@ Exploring angular features with examples
 ## Examples
 - Template
 - Interpolation
+- Module
+- Component
