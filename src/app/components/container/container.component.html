@@ -1,0 +1,29 @@
+<!-- ng-template demo for valid data -->
+<!-- 
+<ng-template [ngIf]="data" [ngIfElse]="noData">
+    <div class="fontStyle">
+      <h1>{{ data.name }}</h1>
+      <h2>{{ data.dept }}</h2>
+    </div>
+</ng-template>
+
+<ng-template #noData>
+  No data found
+</ng-template> -->
+
+<ng-container *ngTemplateOutlet="rank == 1 ? pavithra : yamuna;context:data;"></ng-container>
+
+<ng-template #pavithra let-student="first">
+  <div class="first-rank">
+    <h1>{{ student.name }}<!-- Interpolation --></h1>
+    <h2>{{ student.dept }}</h2>
+    <h2>{{ student.medal }}</h2>
+  </div>
+</ng-template>
+
+<ng-template #yamuna let-student="second">
+  <div class="second-rank">
+    <h1>{{ student.name }}</h1>
+    <h2>{{ student.dept }}</h2>
+  </div>
+</ng-template>
