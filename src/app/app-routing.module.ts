@@ -7,7 +7,7 @@ import { ToysComponent } from './toys/toys.component';
 
 const routes: Routes = [
   {
-    path: "food-list",
+    path: "happy-pills",
     component: FoodListComponent
   },
   {
